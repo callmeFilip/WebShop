@@ -11,19 +11,14 @@ import com.webshop.Entities.Product_Item_Class;
 import com.webshop.RepositoryAccess.ItemRepository;
 
 @RestController
-@RequestMapping(path="/EN")
+@RequestMapping(path="/")
 public class MainController {
-	
-	public MainController() {
-		System.out.print(" in Main\n\n\n\n");
-
-	}
 	@Autowired
 	private ItemRepository repo;
 	
-	@GetMapping(path="/")
+	@GetMapping(path="")
 	public @ResponseBody Iterable<Product_Item_Class> getAllItems(){
-		System.out.print(" /All");
+		System.out.print("\n\n /All \n\n");
 		return repo.findAll();
 	}
 	

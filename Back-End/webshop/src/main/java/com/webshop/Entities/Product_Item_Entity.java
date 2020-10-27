@@ -2,107 +2,114 @@ package com.webshop.Entities;
 
 public class Product_Item_Entity {
 	
-	private Integer m_productItemId;
+	private Integer id;
 
-	private String m_productItemType;
+	private String type;
 
-	private String m_productItemBrand;
+	private String brand;
 
-	private String m_productItemModel;
+	private String model;
 
-	private double m_productItemPrice;
+	private double price;
 
-	private String m_productItemDiscription;
+	private String description;
 
-	private Integer m_productItemQuantity;
+	private Integer quantity;
 
 	public Product_Item_Entity() {
 
-		m_productItemType = "default type";
+		type = "default type";
 
-		m_productItemBrand = "default brand";
+		brand = "default brand";
 
-		m_productItemModel = "default model";
+		model = "default model";
 
-		m_productItemPrice = -1.0;
+		price = -1.0;
 
-		m_productItemDiscription = "default discription";
+		description = "default description";
 
-		m_productItemQuantity = -1;
+		quantity = -1;
 
 	}
 
-	public Product_Item_Entity(String m_productItemType, String m_productItemBrand, String m_productItemModel,
-			double m_productItemPrice, String m_productItemDiscription, Integer m_productItemQuantity) {
+	public Product_Item_Entity(String type, String brand, String model,
+			double price, String description, Integer quantity) {
 
-		this.m_productItemType = m_productItemType;
+		this.type = type;
 
-		this.m_productItemBrand = m_productItemBrand;
+		this.brand = brand;
 
-		this.m_productItemModel = m_productItemModel;
+		this.model = model;
 
-		this.m_productItemPrice = m_productItemPrice;
+		this.price = price;
 
-		this.m_productItemDiscription = m_productItemDiscription;
+		this.description = description;
 
-		this.m_productItemQuantity = m_productItemQuantity;
+		this.quantity = quantity;
 
 	}
 	
+	public Product_Item_Entity(Product_Item_Entity entity) {
+		
+		
+		
+	}
+
 	public Integer getId() {
-		return m_productItemId;
+		return id;
 	}
 
 	public String getType() {
-		return m_productItemType;
+		return type;
 	}
 
 	public String getBrand() {
-		return m_productItemBrand;
+		return brand;
 	}
 
 	public String getModel() {
-		return m_productItemModel;
+		return model;
 	}
 
 	public double getPrice() {
-		return m_productItemPrice;
+		return price;
 	}
 
-	public String getDiscription() {
-		return m_productItemDiscription;
+	public String getdescription() {
+		return description;
 	}
 
 	public Integer getQuantity() {
-		return m_productItemQuantity;
+		return quantity;
 	}
 
-	public void setId(Integer m_productItemId) {
-		this.m_productItemId = m_productItemId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
-	public void setType(String m_productItemType) {
-		this.m_productItemType = m_productItemType;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	public void setBrand(String m_productItemBrand) {
-		this.m_productItemBrand = m_productItemBrand;
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
 
-	public void setModel(String m_productItemModel) {
-		this.m_productItemModel = m_productItemModel;
+	public void setModel(String model) {
+		this.model = model;
 	}
 
-	public void setPrice(double m_productItemPrice) {
-		this.m_productItemPrice = m_productItemPrice;
+	public void setPrice(double price) {
+		this.price = price;
 	}
 
-	public void setDiscription(String m_productItemDiscription) {
-		this.m_productItemDiscription = m_productItemDiscription;
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
-	public void setQuantity(Integer m_productItemQuantity) {
-		this.m_productItemQuantity = m_productItemQuantity;
+	public void setQuantity(Integer quantity) {
+		this.quantity = quantity;
 	}
+
 
 }
