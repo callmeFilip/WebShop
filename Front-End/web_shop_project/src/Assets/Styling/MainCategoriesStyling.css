@@ -1,0 +1,21 @@
+.grid-container{
+  display: grid;
+  gap: 5px;
+  grid-template-columns: min-content min-content min-content;
+  background-color: rgb(219, 213, 213);
+  padding: 100px;
+  height: 650px;
+}
+.grid-container>div{
+  border: 2px solid black;
+  background-color: rgb(213, 213, 235);
+  height: 300px;
+  width:250px;
+  text-align: center;
+  padding: 20px;
+  background-image:url("../../Pics/nike.jpg")
+  
+  }
+.grid-container background-image{
+  text-align: center;
+}

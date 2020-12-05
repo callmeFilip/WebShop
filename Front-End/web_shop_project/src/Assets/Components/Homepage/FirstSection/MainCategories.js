@@ -1,10 +1,9 @@
 import React from  "react";
 import "../../../Styling/MainCategoriesStyling.css";
-
 const  MainCategories = (props)=>{
     return(
-        <div className="ShoeLabel">
-           {props.label}
+        <div>
+            <h3>{props.label}</h3>
         </div>
     );
 }
