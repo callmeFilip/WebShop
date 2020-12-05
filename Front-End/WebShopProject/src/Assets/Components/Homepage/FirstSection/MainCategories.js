@@ -3,9 +3,8 @@ import "../../../Styling/MainCategoriesStyling.css";
 
 const  MainCategories = (props)=>{
     return(
-        <div>
-            <p>Category: {props.name}</p>
-
+        <div className="ShoeLabel">
+           {props.label}
         </div>
     );
 }
