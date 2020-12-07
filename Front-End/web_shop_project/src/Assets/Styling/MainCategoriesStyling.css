@@ -1,21 +1,36 @@
 .grid-container{
+  background-color: black;
   display: grid;
-  gap: 5px;
+  gap: 15px;
   grid-template-columns: min-content min-content min-content;
-  background-color: rgb(219, 213, 213);
   padding: 100px;
   height: 650px;
+  
 }
 .grid-container>div{
-  border: 2px solid black;
-  background-color: rgb(213, 213, 235);
   height: 300px;
   width:250px;
   text-align: center;
   padding: 20px;
-  background-image:url("../../Pics/nike.jpg")
+  position: relative;
+  left:100%;
+  bottom : -30%;
+  border-color:  black;
   
   }
-.grid-container background-image{
-  text-align: center;
+.Main_Window > h3{
+text-align: center;
+position: relative;
+bottom:80px;
+left : 20px;
+margin:20px;
+border:3px solid black;
+border-radius: 10px;
+border-style:double;
+background-color:grey;
+}
+.Main_Window > img{
+  height: 400px;
+  width: 300px;
+ 
 }
