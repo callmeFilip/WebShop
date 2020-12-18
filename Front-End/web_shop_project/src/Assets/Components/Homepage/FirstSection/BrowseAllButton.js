@@ -4,6 +4,7 @@ class BrowseAllButton extends Component {
     render() {
         return (
             <div>
+                
                 <button>Browse all</button>
             </div>
         )
